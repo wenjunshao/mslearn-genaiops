@@ -1,0 +1,6 @@
+test_name,intent_resolution,relevance,groundedness,depth
+day-hike-gear,5,5,5,4
+overnight-camping,5,5,5,4
+three-day-backpacking,5,5,5,4
+trail-difficulty,5,5,5,4
+winter-hiking,5,5,5,4
