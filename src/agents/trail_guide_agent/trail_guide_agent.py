@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from azure.identity import DefaultAzureCredential
+from azure.identity import AzureCliCredential
 from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import PromptAgentDefinition
 
@@ -9,13 +9,13 @@ from azure.ai.projects.models import PromptAgentDefinition
 load_dotenv()
 
 # Read instructions from prompt file
-prompt_file = Path(__file__).parent / 'prompts' / 'v4_optimized_concise.txt'
+prompt_file = Path(__file__).parent / 'prompts' / 'v1_instructions.txt'
 with open(prompt_file, 'r') as f:
     instructions = f.read().strip()
 
 project_client = AIProjectClient(
     endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],
-    credential=DefaultAzureCredential(),
+    credential=AzureCliCredential(),
 )
 
 agent = project_client.agents.create_version(
@@ -26,3 +26,5 @@ agent = project_client.agents.create_version(
     ),
 )
 print(f"Agent created (id: {agent.id}, name: {agent.name}, version: {agent.version})")
+
+
