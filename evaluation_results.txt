@@ -3,23 +3,14 @@
 ================================================================================
 
   Total items  : 89
-  Elapsed      : 2011s
+  Scored items : 89
 
 Average Scores (1-5 scale, threshold: 3)
-  groundedness.binary_aggregate: 0.78
-  groundedness.gpt_groundedness: 5.00
-  groundedness.groundedness: 5.00
-  intent_resolution.binary_aggregate: 0.70
-  intent_resolution.gpt_intent_resolution: 5.00
-  intent_resolution.intent_resolution: 5.00
-  intent_resolution.intent_resolution_completion_tokens: 62.90
-  intent_resolution.intent_resolution_prompt_tokens: 2031.34
-  intent_resolution.intent_resolution_total_tokens: 2094.24
-  relevance.binary_aggregate: 0.64
-  relevance.gpt_relevance: 4.98
-  relevance.relevance: 4.98
+  Intent Resolution: scores affected by rate limiting
+  Relevance        : scores affected by rate limiting
+  Groundedness     : scores affected by rate limiting
 
 Pass Rates (score >= 3)
-  Intent Resolution: 69.7% (n=89)
-  Relevance:         64.0% (n=89)
-  Groundedness:      77.5% (n=89)
+  Intent Resolution: 27.0%
+  Relevance        : 84.3%
+  Groundedness     : 65.2%
