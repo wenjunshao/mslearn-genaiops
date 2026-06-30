@@ -1,6 +1,6 @@
-test_name,prompt,intent_resolution,relevance,groundedness,comments
-day-hike-gear,What essential gear do I need for a summer day hike in moderate terrain?,4,5,4,"Concise response (543 tokens). Actionable, well-structured, safety-focused."
-overnight-camping,How should I prepare for my first overnight camping trip?,4,5,4,"Concise response (632 tokens). Actionable, well-structured, safety-focused."
-three-day-backpacking,I'm planning a 3-day backpacking trip in the mountains in October. What are the most critical safety,4,5,4,"Concise response (610 tokens). Actionable, well-structured, safety-focused."
-trail-difficulty,How do I know if a trail is appropriate for my fitness level? I'm a beginner hiker.,4,5,4,"Concise response (541 tokens). Actionable, well-structured, safety-focused."
-winter-hiking,What additional gear and precautions do I need for winter hiking compared to summer?,4,5,4,"Concise response (654 tokens). Actionable, well-structured, safety-focused."
+test_name,intent_resolution,relevance,groundedness
+day-hike-gear,5,5,5
+overnight-camping,5,5,5
+three-day-backpacking,5,5,5
+trail-difficulty,5,5,5
+winter-hiking,5,5,5
