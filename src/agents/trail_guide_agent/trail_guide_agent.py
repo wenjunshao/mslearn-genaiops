@@ -21,7 +21,7 @@ project_client = AIProjectClient(
 agent = project_client.agents.create_version(
     agent_name=os.environ["AGENT_NAME"],
     definition=PromptAgentDefinition(
-        model=os.getenv("MODEL_NAME", "gpt-4.1"),  # Use Global Standard model
+        model="gpt-5-mini",  # Use GPT-5-mini (successor to deprecated GPT-4.1-mini)
         instructions=instructions,
     ),
 )
